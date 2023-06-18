@@ -52,8 +52,11 @@ set /a "linecount-=1"
 REM Remove the results.txt file
 del results.txt >nul 2>nul
 
+echo The system finally managed to find all the files specified.
 echo. 
 echo Task completed successfully regardless of all errors above which you can simply ignore. Everything is good. Trust me. If everything is actually is not good, I've made backups for you.
 echo Total of %linecount% files edited.
+echo Congrats, %USERNAME%! Seems like everything worked well!
+echo.
 echo (C)2023 Lex713
 pause
