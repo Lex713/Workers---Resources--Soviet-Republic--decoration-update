@@ -35,6 +35,8 @@ for /f "delims=" %%b in (results.txt) do (
 
     REM Delete everything except the line containing "$NAME_STR"
     findstr /i /c:"$NAME_STR" "!filename!" >"!tempfile!"
+    findstr /i /c:"$MONUMENT_GOVERNMENT_LOYALTY_RADIUS" "!filename!" >>"!tempfile!"
+    findstr /i /c:"$MONUMENT_GOVERNMENT_LOYALTY_STRENGTH" "!filename!" >>"!tempfile!"
 
     REM Add the new lines to the temporary file
     echo.$HARBOR_EXTEND_AREA_WHEN_BULDING -80>>"!tempfile!"
